@@ -1,0 +1,208 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #48A30012;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+main{
+     max-width: 1200px;
+  margin: 0 auto;          
+  padding: 0 16px 32px; 
+}
+
+.title{
+    color: #48A300;
+    font-size: 64px;
+    text-align: center;
+    margin:2.5rem 0;
+}
+
+h1 span{
+    color:#61481C;
+}
+
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+.app-container{
+
+    background-color: #fbfbfb;
+    min-height:90vh;
+    width:100%;
+    max-width: 660px;
+    border-radius:15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);;
+    
+}
+
+h2{
+    display: flex;
+    gap:22px;
+    margin-left:40px;
+    margin-top:50px;
+}
+
+h2 img{
+
+    height:50px;
+    width:50px;
+
+}
+
+.raise{
+
+    color: #6b6b6b;
+    font-size: 14px;
+    margin-left:40px;
+
+    
+}
+
+.progress-bar{
+
+    width:100%;
+    max-width: 90%;
+    height:1.75rem;
+    background-color: rgb(228, 234, 233);
+    margin: 1.25rem auto;
+     border-radius:15px;
+}
+
+
+
+
+
+.progress-bar-value span{
+    color:white;
+    font-size:10px;
+    margin-left: 15px;
+   
+}
+
+.error{
+    color: red;
+    margin: 0.25rem 0 0 2.5rem;
+    font-size: 13px;
+    display: none;
+}
+
+.box{
+    
+   background-color:white;
+   height:82px;
+   border-radius: 10px;
+   width:100%;
+   max-width:90%;
+    margin: 2rem auto;
+    border:.5px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border 0.2s ease;
+    gap:15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+
+    
+
+
+}
+
+.box:hover{
+
+    border: 1px solid #c7c7c7;
+}
+
+.box input[type="checkbox"]{
+
+    width:22px;
+    height: 22px;
+    border-radius: 50%;
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: white;
+    border:2px solid grey;
+    display: grid;
+    place-content: center;
+    margin-left:15px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+
+}
+
+.box input[type="checkbox"]:checked{
+
+    background-color:  #48A300;
+    border:  #48A300;
+
+
+}
+
+.box input[type="checkbox"]:checked::after{
+    content:"✔";
+    color: white;
+    font-size: 14px;
+
+
+}
+
+.goal-input{
+    height: 100%;
+    flex:1;
+    border:none;
+    outline: none;
+    border-radius:10px;
+    font-size: 20px;
+    background-color: transparent;
+    color: black;
+    
+}
+
+.goal-input::placeholder{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+
+.quote{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.app-footer{
+    display: flex;
+    justify-content: center;
+    margin-top:80px;
+    font-size: 10px;
+    color: grey;
+}
+
+
+
+.error {
+  display: none;
+}
+
+.progress-bar-value {
+  height: 100%;
+  width: 0;
+  background-color:  #48A300;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  transition: width 0.3s ease-in-out; /
+}
+
+
+
+
