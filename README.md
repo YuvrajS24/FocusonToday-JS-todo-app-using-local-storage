@@ -3,6 +3,8 @@
 
 Tried to make Javascript todo app call Focus On Today to learn local storage and enhance my js logic.
 
+learnt localStorage.getitem() and localStorage.setitem().
+
 Here is a demo:
 
 
